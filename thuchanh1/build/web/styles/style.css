@@ -1,0 +1,53 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 5, 2022, 8:09:40 AM
+    Author     : Legion 5
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 300px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#user, #pass{
+    width: 250px;
+}
+
+#btn{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login{
+    width: 123px;
+    background-color: orange;
+    padding: 2px 5px;
+    outline: none;
+    border-radius: 3px;
+}
+
+#register{
+    width: 123px;
+    background-color: gray;
+    padding: 2px 5px;
+    outline: none;
+    border-radius: 3px;
+}
