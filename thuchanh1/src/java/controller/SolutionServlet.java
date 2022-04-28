@@ -90,11 +90,11 @@ public class SolutionServlet extends HttpServlet {
                     if(u.getUser().toString().equalsIgnoreCase(user) && u.getPass().toString().equalsIgnoreCase(pass)){
                         request.setAttribute("data", u.getUser());
                         UserIO tmp = new UserIO();
-                        if(tmp.doc("D:/webPTIT/thuchanh1/web/WEB-INF/Login.txt").toString().contains(u.getUser())){
+                        if(tmp.doc("D:/webPTIT/THWeb/thuchanh1/web/WEB-INF/Login.txt").toString().contains(u.getUser())){
                             mes3 = "Tai khoan da co trong Login.txt";
                         }
                         else{
-                            tmp.viet(u, "D:/webPTIT/thuchanh1/web/WEB-INF/Login.txt");
+                            tmp.viet(u, "D:/webPTIT/THWeb/thuchanh1/web/WEB-INF/Login.txt");
                         }
                         request.setAttribute("mes3", mes3);
                         url = "webApp.jsp";

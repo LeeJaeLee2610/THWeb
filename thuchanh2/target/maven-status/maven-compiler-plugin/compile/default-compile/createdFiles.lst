@@ -1,0 +1,3 @@
+model\Product.class
+dao\ProductID.class
+dbHelper\DatabaseHelper.class

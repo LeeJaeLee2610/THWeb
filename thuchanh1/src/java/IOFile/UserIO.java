@@ -48,6 +48,6 @@ public class UserIO {
     public static void main(String args[]){
         UserIO tmp = new UserIO();
         List<String> list = new ArrayList<>();
-        System.out.println(tmp.doc("G:/webPTIT/TH1/web/WEB-INF/Login.txt"));
+        System.out.println(tmp.doc("D:/webPTIT/THWeb/thuchanh1/web/WEB-INF/Login.txt"));
     }
 }

@@ -1,0 +1,146 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 24, 2022, 9:29:52 PM
+    Author     : LeeJaeLee
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+body{
+    width: 800px;
+}
+
+.table .head{
+    display: flex;
+}
+
+.table .about{
+    display: flex;
+}
+
+.table .head div, .table .about div{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.table .head div:nth-child(1), .table .about div:nth-child(1){
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .head div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .head div:nth-child(2), .table .about div:nth-child(2){
+    flex-basis: 40%;
+}
+
+.table .head div:nth-child(3), .table .about div:nth-child(3){
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .about div:nth-child(4){
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .about div:nth-child(5){
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table a{
+    color: black;
+    text-decoration: none;
+}
+
+.table .about div:nth-child(4):hover a, .table .about div:nth-child(5):hover a{
+    color: pink;
+}
+
+.btn-add{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: pink;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font-style: italic;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form{
+    padding: 10px;
+}
+
+form div:not(.btn-p){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form div label{
+    flex-basis: 20%;
+}
+
+form div input[type=text]{
+    flex-basis: 50%;
+    padding: 5px;
+}
+
+form div span{
+    flex-basis: 40%;
+}
+
+form > div{
+    margin-bottom: 10px;
+}
+
+.btn-p{
+    display: flex;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.btn-p button{
+    margin-right: 10px;
+    flex-basis: 45%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
