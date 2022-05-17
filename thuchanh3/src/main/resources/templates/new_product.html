@@ -22,7 +22,10 @@
             <p style="color: red" th:if="${errorPrice!=null}" th:text="${errorPrice}"></p>
             <br>
             <br> 
-            <input type="submit" value="Save">
+            <input type="submit" value="Update Product">
+            <button type="button">
+                <a th:href="@{/index/products}" style="text-decoration: none">View Products</a>
+            </button>
         </form >
 </body>
 </html>

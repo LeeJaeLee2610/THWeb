@@ -1,8 +1,8 @@
-D:\webPTIT\thuchanh2\src\main\java\controller\DeleteController.java
-D:\webPTIT\thuchanh2\src\main\java\controller\ProductAddController.java
-D:\webPTIT\thuchanh2\src\main\java\controller\ProductsController.java
-D:\webPTIT\thuchanh2\src\main\java\dao\ProductID.java
-D:\webPTIT\thuchanh2\src\main\java\controller\ProductDeleteController.java
-D:\webPTIT\thuchanh2\src\main\java\controller\ProductUpdateController.java
-D:\webPTIT\thuchanh2\src\main\java\model\Product.java
-D:\webPTIT\thuchanh2\src\main\java\dbHelper\DatabaseHelper.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\controller\ProductAddController.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\dao\ProductID.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\controller\DeleteController.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\controller\ProductsController.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\dbHelper\DatabaseHelper.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\controller\ProductDeleteController.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\model\Product.java
+D:\webPTIT\THWeb\thuchanh2\src\main\java\controller\ProductUpdateController.java
