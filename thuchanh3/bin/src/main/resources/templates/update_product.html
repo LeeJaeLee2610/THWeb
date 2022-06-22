@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update Product</h1>
+        <form th:action="@{/index/saveupdate/{code}(code = ${product.code})}" th:object="${product}" method="post">
+            <label>Code: </label>
+            <input type="text" name="code" disabled="true" th:value="${product.code}" readonly>
+            <br>
+            <label>Description: </label>
+            <input type="text" name="description" th:value="${product.description}">
+            <p style="color: red" th:if="${errorDes!=null}" th:text="${errorDes}"></p>
+            <br>
+            <label>Price: </label>
+            <input type="text" name="price" th:value="${product.price}">
+            <p style="color: red" th:if="${errorPrice!=null}" th:text="${errorPrice}"></p>
+            <br>
+            <br>
+            <div>
+            <input type="submit" value="Update Product">  
+            <button>
+                <a th:href="@{/index/products}" style="text-decoration: none">View Products</a>
+            </button>
+        </form>
+</body>
+</html>

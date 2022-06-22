@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Are you sure you want to delete this product?</h1>
+    <form th:action="@{/index/confirmDelete/{code}(code = ${product.code})}" th:object="${product}" method="post">
+        <p>Product Code: <span th:text="${product.code}"></span></p>
+        <p>Product Description: <span th:text="${product.description}"></span></p>
+        <p>Product Price: <span th:text="${product.price}"></span>$</p>
+        <input type="text" name="code" hidden="true" value="${p.code}"> 
+        <input type="submit" value="Yes">  
+        <button>
+            <a th:href="@{/index/products}" style="text-decoration: none">No</a>
+        </button>
+    </form>
+</body>
+</html>

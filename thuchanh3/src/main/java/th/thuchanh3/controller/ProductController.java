@@ -1,6 +1,9 @@
 package th.thuchanh3.controller;
 
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,14 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import lombok.extern.log4j.Log4j2;
 import th.thuchanh3.database.Database;
 import th.thuchanh3.model.Product;
 
-@Log4j2
 @Controller
 @RequestMapping("/index")
 public class ProductController {
+	private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
     @Autowired
     private Database db;
 
@@ -36,6 +38,7 @@ public class ProductController {
 
 	@PostMapping("/saveProduct")
 	public String saveNewProduct(@ModelAttribute("product") Product product, Model model) {
+		logger.info("Price: "+String.valueOf(product.getPrice()));
 		if(!db.checkValidCode(product.getCode())) {
 			model.addAttribute("product", product);
 			model.addAttribute("errorCode", "Không được để trống");
